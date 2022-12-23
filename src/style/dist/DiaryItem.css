@@ -1,0 +1,56 @@
+.DiaryList {
+  border: 35px solid;
+  border-image-source: url(../../public/medias/check3.png);
+  border-image-slice: 30 42;
+  border-image-repeat: round;
+  background-color: var(--gre-one);
+  margin-top: 20px;
+  margin: 0 auto;
+  width: 400px;
+}
+.DiaryList h2 {
+  color: var(--gre-two);
+}
+.DiaryList .ListBody {
+  max-height: 600px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.DiaryList .ListBody::-webkit-scrollbar {
+  background: var(--gre-fou);
+}
+.DiaryList .ListBody::-webkit-scrollbar-thumb {
+  background: var(--gre-fiv);
+}
+
+.DiaryItem {
+  background-color: var(--gre-the);
+  margin: 13px 0;
+  padding: 20px;
+  text-align: left;
+  width: 342px;
+}
+.DiaryItem .info {
+  border-bottom: 3px green dashed;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.DiaryItem .date {
+  color: var(--gre-one);
+  font-size: 14px;
+}
+.DiaryItem .content {
+  margin: 30px 0;
+  font-family: "NanumB";
+  white-space: pre-line;
+  width: 345px;
+}
+.DiaryItem button {
+  background-color: var(--gre-fiv);
+  border: none;
+  margin: 0 5px 0 0;
+  color: var(--gre-one);
+}

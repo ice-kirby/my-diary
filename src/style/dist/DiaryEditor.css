@@ -1,0 +1,58 @@
+.DiaryEditor {
+  border: 35px solid;
+  border-image-source: url(../../public/medias/check2.png);
+  border-image-slice: 30 42;
+  border-image-repeat: round;
+  background-color: #f2d8d4;
+  margin: 0 auto;
+  width: 400px;
+  height: 500px;
+  color: #df5d58;
+}
+.DiaryEditor h2 {
+  margin: 10px 0;
+}
+.DiaryEditor input {
+  font-family: "NanumB";
+  width: 300px;
+  height: 25px;
+  font-size: 16px;
+  color: #bc4a49;
+  outline-color: #bc4a49;
+  outline-offset: 3px;
+  border: none;
+}
+.DiaryEditor textarea {
+  font-family: "NanumB";
+  width: 300px;
+  height: 330px;
+  color: #bc4a49;
+  outline-color: #bc4a49;
+  outline-offset: 3px;
+  font-size: 14px;
+  margin: 6px 0 6px 0;
+  border: none;
+}
+.DiaryEditor select {
+  font-family: "NanumB";
+  font-size: 18px;
+  color: #bc4a49;
+  width: 65px;
+  height: 35px;
+  border: none;
+  outline: none;
+}
+.DiaryEditor button {
+  width: 50px;
+  height: 35px;
+  border: none;
+  background-color: #df5d58;
+  color: white;
+  margin: 0 0 0 10px;
+}
+.DiaryEditor .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6px 0 0 0;
+}

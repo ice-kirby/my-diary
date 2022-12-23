@@ -1,0 +1,104 @@
+.Header {
+  display: flex;
+  flex-direction: column;
+  font-family: "NanumB";
+  width: 120px;
+  height: 160px;
+}
+.Header .One-W,
+.Header .Two-W {
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 60px;
+  font-weight: bold;
+}
+.Header .One,
+.Header .Two {
+  width: 120px;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  margin-bottom: 20px;
+}
+.Header .One {
+  background-image: url(../../public/medias/che.png);
+}
+.Header .One-W {
+  color: var(--yel-two);
+}
+.Header .Two-W {
+  color: var(--blu-the);
+}
+.Header .Two {
+  background-image: url(../../public/medias/check10.png);
+}
+
+@keyframes egg-ani {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.egg {
+  width: 120px;
+  height: 390px;
+  animation-name: egg-ani;
+  margin-top: 50px;
+  display: flex;
+}
+
+.blue {
+  width: 40px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -10;
+  background-image: url(../../public/medias/blueegg.png);
+  animation: egg-ani 4s linear infinite;
+}
+
+.red {
+  width: 40px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -10;
+  background-image: url(../../public/medias/redegg.png);
+  animation: egg-ani 6s linear infinite;
+}
+
+.yellow {
+  width: 40px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -10;
+  background-image: url(../../public/medias/yellowegg.png);
+  animation: egg-ani 5s linear infinite;
+}
+
+.green {
+  width: 40px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -10;
+  background-image: url(../../public/medias/greenegg.png);
+  animation: egg-ani 3s linear infinite;
+}
+
+.diaryegg {
+  position: absolute;
+  top: 300px;
+}
+
+.diaryegg.one {
+  color: var(--red-two);
+}

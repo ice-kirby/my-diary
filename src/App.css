@@ -1,38 +1,41 @@
+@font-face {
+  font-family: "PeaceR";
+  src: url(../public/medias/PyeongChang-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "NanumB";
+  src: url(../public/medias/NanumSquareNeoTTF-bRg.woff) format("woff");
+}
+
+:root {
+  /* 레드 */
+  --red-one: #f2d8d4;
+  --red-two: #df5d58;
+  --red-the: #bc4a49;
+  --red-fou: #ff0004;
+
+  /* 그린 */
+  --gre-one: #e8fdb6;
+  --gre-two: #72c554;
+  --gre-the: #bacf90;
+  --gre-fou: #77a369;
+  --gre-fiv: #677b5f;
+
+  /* 블루 */
+  --blu-one: #748ecf;
+  --blu-two: #d7e3fa;
+  --blu-the: #6478e2;
+  --blu-fou: #a0b3de;
+
+  /* 옐로 */
+  --yel-one: #ecd051;
+  --yel-two: #f9cc29;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-family: "NanumB";
+  /* width: 100%; */
+  height: 100vh;
+  margin: 0 0 0 25px;
 }

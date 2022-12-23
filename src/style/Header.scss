@@ -1,0 +1,111 @@
+.Header {
+  display: flex;
+  flex-direction: column;
+  font-family: "NanumB";
+  width: 120px;
+  height: 160px;
+
+  .One-W,
+  .Two-W {
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 60px;
+    font-weight: bold;
+  }
+
+  .One,
+  .Two {
+    width: 120px;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    margin-bottom: 20px;
+  }
+
+  .One {
+    // border: 30px solid;
+    // border-image-source: url(../../public/medias/check7.png);
+    // border-image-slice: 30 70;
+    // border-image-repeat: round;
+    // background-color: var(--blu-two);
+    background-image: url(../../public/medias/che.png);
+
+    // background-color: var(--blu-fou);
+  }
+
+  .One-W {
+    color: var(--yel-two);
+  }
+  .Two-W {
+    color: var(--blu-the);
+  }
+
+  .Two {
+    background-image: url(../../public/medias/check10.png);
+    // background-color: var(--yel-one);
+  }
+}
+
+@keyframes egg-ani {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -30px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@mixin Egg() {
+  width: 40px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -10;
+}
+
+.egg {
+  width: 120px;
+  height: 390px;
+  animation-name: egg-ani;
+  margin-top: 50px;
+  display: flex;
+}
+
+.blue {
+  @include Egg();
+  background-image: url(../../public/medias/blueegg.png);
+  animation: egg-ani 4s linear infinite;
+}
+
+.red {
+  @include Egg();
+  background-image: url(../../public/medias/redegg.png);
+  animation: egg-ani 6s linear infinite;
+}
+
+.yellow {
+  @include Egg();
+  background-image: url(../../public/medias/yellowegg.png);
+  animation: egg-ani 5s linear infinite;
+}
+
+.green {
+  @include Egg();
+  background-image: url(../../public/medias/greenegg.png);
+  animation: egg-ani 3s linear infinite;
+}
+
+.diaryegg {
+  position: absolute;
+  top: 300px;
+}
+
+.diaryegg.one {
+  color: var(--red-two);
+}
